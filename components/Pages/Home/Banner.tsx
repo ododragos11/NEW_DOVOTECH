@@ -9,7 +9,7 @@ const Banner: FC = () => (
     <section className="-mt-20">
         <Swiper modules={[Autoplay]} loop autoplay speed={200} slidesPerView={1} spaceBetween={0}>
             <SwiperSlide>
-                <div className="relative h-[34rem] ">
+                <div className="relative h-[40rem] ">
                     <Image
                         src="/banner1.png"
                         alt="slide1"
@@ -19,7 +19,7 @@ const Banner: FC = () => (
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="relative h-[34rem] ">
+                <div className="relative h-[40rem] ">
                     <Image
                         src="/banner2.png"
                         alt="slide1"

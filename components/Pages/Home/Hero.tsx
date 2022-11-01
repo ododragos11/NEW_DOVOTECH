@@ -53,9 +53,7 @@ const Hero: FC = () => (
                         <h2 className="text-xl text-center mt-3 tracking-widest uppercase">
                             DOVOTECH
                         </h2>
-                        <h1 className="text-2xl text-center uppercase ">
-                            T8 Pro Max Gold Speaker 40W
-                        </h1>
+                        <h1 className="text-2xl text-center uppercase ">T8 Pro Max Speaker 40W</h1>
                         <p className="text-gray-500 text-center font-medium">$129.98</p>
                     </div>
                 </div>
@@ -93,9 +91,7 @@ const Hero: FC = () => (
                         <h2 className="text-xl text-center mt-3 tracking-widest uppercase">
                             DOVOTECH
                         </h2>
-                        <h1 className="text-2xl text-center uppercase ">
-                            T8 Pro Max Gold Speaker 40W
-                        </h1>
+                        <h1 className="text-2xl text-center uppercase ">T8 Pro Max Speaker 40W</h1>
                         <p className="text-gray-500 text-center font-medium">$129.98</p>
                     </div>
                 </div>
