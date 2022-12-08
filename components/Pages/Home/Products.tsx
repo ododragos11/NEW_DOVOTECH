@@ -186,7 +186,7 @@ const Products: FC = () => (
                     </div>
                 </div>
             </Link>
-            <div className="grid grid-cols-1 md:grid-cols-2 h-[500px] w-[80vw] max-w-[1280px]  ">
+            <div className="grid grid-cols-1 md:grid-cols-2 h-[500px] md:w-[80vw] max-w-[1280px]  ">
                 <div className="relative h-full w-full">
                     <Image
                         className="hover:scale-105 transition-all cursor-pointer "

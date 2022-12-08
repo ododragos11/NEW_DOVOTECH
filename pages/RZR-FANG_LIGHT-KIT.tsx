@@ -2,6 +2,7 @@ import { NextPage } from 'next';
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Select from 'react-select';
+import { FaAmazon } from 'react-icons/fa';
 
 // Import Swiper styles
 import 'swiper/swiper-bundle.min.css';
@@ -92,34 +93,15 @@ const Product: NextPage = () => {
                         />
                     </div>
                     <div className="flex">
-                        <div>
-                            <button
-                                type="button"
-                                onClick={() => setCounter(counter > 1 ? counter - 1 : counter)}
-                                className="bg-black text-[#F6C567] font-bold px-4 py-2 rounded-md"
-                            >
-                                -
-                            </button>
-                        </div>
-                        <span className="px-8 flex items-center bg-gray-100 rounded-md mx-2">
-                            {counter}
-                        </span>
-                        <div>
-                            <button
-                                type="button"
-                                onClick={() => setCounter(counter + 1)}
-                                className="bg-black text-[#F6C567] font-bold px-4 py-2 rounded-md "
-                            >
-                                +
-                            </button>
-                        </div>
-
-                        <button
-                            type="button"
-                            className="bg-black text-[#F6C567] px-10 py-2 text-sm rounded-md ml-4"
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://www.amazon.com/dp/B08KZQZQ3S/ref=cm_sw_em_r_mt_dp_U_1ZQ7FbZJZJZ1S"
+                            className="bg-[#D38106] text-white flex items-center px-10 py-2 text-sm rounded-md mt-4"
                         >
-                            Add to Cart
-                        </button>
+                            <span className="font-semibold">Check price on</span>
+                            <FaAmazon className="text-white mt-1 text-lg ml-2" />
+                        </a>
                     </div>
                     <div className="mt-8 text-xl space-y-5 ">
                         ✔️WHILE OTHER 2020 RZR XP 1000 lights, RZR accessories and RZR fang lights

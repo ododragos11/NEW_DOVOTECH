@@ -5,6 +5,7 @@ import { Modal } from 'flowbite-react';
 // @ts-ignore
 import ReactStars from 'react-rating-stars-component';
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
+import { toast } from 'react-toastify';
 
 const ReviewModal: FC<{
     setShowModal: Dispatch<SetStateAction<boolean>>;
@@ -15,7 +16,7 @@ const ReviewModal: FC<{
         if (rating === 5) {
             window.open('https://www.amazon.com');
         } else {
-            alert('Thank you for your feedback');
+            toast.success('Thank you for your feedback');
             setShowModal(false);
             setShowFinal(false);
         }
@@ -67,10 +68,10 @@ const ReviewModal: FC<{
         </>
     ) : (
         <>
-            <Modal.Header>Please leave your unbiased feedback</Modal.Header>
+            <Modal.Header>How would you rate Golf Portable Bluetooth Speaker</Modal.Header>
             <Modal.Body>
                 <div
-                    className="w-full flex justify-center"
+                    className="w-full flex flex-col items-center"
                     style={{
                         transform: 'scale(2.5)',
                     }}
@@ -81,6 +82,16 @@ const ReviewModal: FC<{
                         activeColor="#ffd700"
                         emptyIcon={<AiOutlineStar />}
                         filledIcon={<AiFillStar />}
+                    />
+                </div>
+                <div className="mt-4">
+                    <label htmlFor="feedback">Please leave your feedback : </label>
+                    <textarea
+                        name="feedback"
+                        id="feedback"
+                        className="w-full h-24 px-4 py-2 text-gray-700 border rounded-lg focus:outline-none"
+                        placeholder="Your feedback"
+                        rows={2}
                     />
                 </div>
             </Modal.Body>

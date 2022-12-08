@@ -14,7 +14,7 @@ const Navbar: FC = () => {
     const [storageBags, setStorageBags] = useState(false);
 
     return (
-        <div className=" sticky top-0 left-0 z-50 h-20 ">
+        <div className="absolute top-0 left-0 z-50 h-20 w-screen ">
             <nav
                 className={` flex justify-center items-center py-4  text-white ${
                     open ? 'bg-gray-300' : 'bg-transparent'

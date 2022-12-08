@@ -5,8 +5,10 @@ import Footer from 'components/Common/Footer';
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
     <>
-        <Navbar />
-        <Component {...pageProps} />
+        <div className="mt-20">
+            <Navbar />
+            <Component {...pageProps} />
+        </div>
         <Footer />
     </>
 );

@@ -14,7 +14,7 @@ const Banner: FC = () => (
                         src="/banner1.png"
                         alt="slide1"
                         layout="fill"
-                        className="absolute object-cover w-full h-full"
+                        className="absolute  object-cover w-full h-full"
                     />
                 </div>
             </SwiperSlide>
@@ -24,7 +24,7 @@ const Banner: FC = () => (
                         src="/banner2.png"
                         alt="slide1"
                         layout="fill"
-                        className="absolute object-cover w-full h-full"
+                        className="absolute  object-cover w-full h-full"
                     />
                 </div>
             </SwiperSlide>

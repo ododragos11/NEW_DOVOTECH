@@ -24,7 +24,7 @@ const ReviewModal: FC<{
     return showFinal ? (
         <>
             <Modal.Header>
-                Thank you for reviewing our{' '}
+                Thank you for reviewing our
                 <span className="uppercase font-bold  "> Polaris RZR Storage Bags</span>!
             </Modal.Header>
 
@@ -67,7 +67,7 @@ const ReviewModal: FC<{
         </>
     ) : (
         <>
-            <Modal.Header>Please leave your unbiased feedback</Modal.Header>
+            <Modal.Header>How would you rate Polaris RZR Storage Bags?</Modal.Header>
             <Modal.Body>
                 <div
                     className="w-full flex justify-center"
@@ -81,6 +81,16 @@ const ReviewModal: FC<{
                         activeColor="#ffd700"
                         emptyIcon={<AiOutlineStar />}
                         filledIcon={<AiFillStar />}
+                    />
+                </div>
+                <div className="mt-4">
+                    <label htmlFor="feedback">Please leave your feedback : </label>
+                    <textarea
+                        name="feedback"
+                        id="feedback"
+                        className="w-full h-24 px-4 py-2 text-gray-700 border rounded-lg focus:outline-none"
+                        placeholder="Your feedback"
+                        rows={2}
                     />
                 </div>
             </Modal.Body>

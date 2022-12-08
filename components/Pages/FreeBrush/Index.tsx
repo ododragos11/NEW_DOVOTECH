@@ -4,8 +4,8 @@ import { collection, addDoc } from 'firebase/firestore';
 import Image from 'next/image';
 import { Modal } from 'flowbite-react';
 import Router from 'next/router';
-import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { toast } from 'react-toastify';
 import ReviewModal from './ReviewModal';
 
 import 'swiper/swiper-bundle.min.css';
@@ -35,12 +35,11 @@ const Gift: FC = () => {
                 Zip_Code: Number(userInfo.Zip_Code),
                 Phone_Number: Number(userInfo.Phone_Number),
             });
-            alert('Your Order has been Submitted');
+            toast.success('Your Order has been Submitted');
             setSubmitLoader(false);
             setShowModal(true);
         } catch (err) {
-            console.error(err);
-            alert('Something went wrong while submitting the form, Please try again');
+            toast.error('Something went wrong while submitting the form, Please try again');
             Router.reload();
             setSubmitLoader(false);
         }
