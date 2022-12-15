@@ -16,7 +16,7 @@ const ProductInfo: FC<{
         )}
     >
         <h1 className="text-3xl font-semibold my-5 md:hidden text-center">{title}</h1>
-        <div className="md:w-1/2 rounded-md relative h-[200px] md:h-[250px]">
+        <div className="md:w-1/2 rounded-md relative h-[440px] md:h-[250px]">
             <Image
                 src={image}
                 alt="product"
@@ -31,7 +31,7 @@ const ProductInfo: FC<{
             )}
         >
             <h1 className="text-3xl font-semibold my-5 hidden md:block">{title}</h1>
-            <p className="md:pr-4 text-lg">{description}</p>
+            <p className="md:pr-4 text-lg mt-2 md:mt-0">{description}</p>
         </div>
     </div>
 );
